@@ -210,46 +210,23 @@
                 <li>The way your aura brightens up the room, really really attractive</li>
                 <li>The vroom vroom experiences we make</li>
                 <li>You make me want to be a better person</li>
+                <li>The way you hold me while riding"</li>
+                <li>How you support me through everything",</li>
+                <li>how you made a person like me to go to a dog cafe",</li>
+                <li>The little things you do that show you care"</li>
+                <li>how freaky we get(best fr)</li>
+                <li>The slow tongue kisses</li>
+                <li>the way you dont leave a hug, makes me feel really loved and valued</li>
+                <li>We're a perfect team together</li>
+                <li>Thankyou so somuch for handling all my drama</li>
+                <li>It aint perfect, but ill try everything I can to make it work</li>
+                <li>I love you baby</li>
             </ul>
         </div>
         
-        <button class="button" id="add-reason">Add Another Reason</button>
         <button class="button" id="toggle-hearts">Show Floating Hearts</button>
     </div>
     
-    <div class="floating-hearts" id="hearts-container"></div>
-    
-    <script>
-        // Add a new reason
-        document.getElementById('add-reason').addEventListener('click', function() {
-            const reasons = [
-                "The way you hold me while riding",
-                "How you support me through everything",
-                "how you made a person like me to go to a dog cafe",
-                "The little things you do that show you care",
-                "how freaky we get(best fr)",
-                "The slow tongue kisses",
-                "the way you dont leave a hug, makes me feel really loved and valued",
-                "We're a perfect team together",
-                "Thankyou so somuch for handling all my drama"
-                "It aint perfect, but ill try everything I can to make it work"
-                "I love you baby"
-            ];
-            
-            const randomReason = reasons[Math.floor(Math.random() * reasons.length)];
-            const reasonsList = document.getElementById('reasons-list');
-            const newReason = document.createElement('li');
-            newReason.textContent = randomReason;
-            
-            // Animation for new reason
-            newReason.style.opacity = '0';
-            reasonsList.appendChild(newReason);
-            
-            setTimeout(() => {
-                newReason.style.transition = 'opacity 1s ease';
-                newReason.style.opacity = '1';
-            }, 10);
-        });
         
         // Floating hearts toggle
         let heartsActive = false;
